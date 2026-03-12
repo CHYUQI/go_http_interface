@@ -11,7 +11,7 @@ COPY ./ ./
 RUN CGO_ENABLE=0 GOOS=linux go build -o app ./main.go
 
 
-FROM apline AS runner
+FROM alpine AS runner
 
 WORKDIR /app
 
